@@ -1,0 +1,17 @@
+name: push to hatena blog
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [closed]
+    paths:
+      - "entries/**"
+
+jobs:
+  push:
+    uses: hatena/hatenablog-workflows/.github/workflows/push.yaml@v1
+    with:
+      local_root: "entries"
+    secrets:
+      OWNER_API_KEY: ${{ secrets.OWNER_API_KEY }}
