@@ -1,11 +1,12 @@
 {
-    "[markdown]":  {
-        "editor.wordWrap": "on",
-        "editor.quickSuggestions": {
-            "comments": "on",
-            "strings": "on",
-            "other": "on"
-        },
-        "editor.snippetSuggestions": "top"
-    }
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "other": "on",
+      "strings": "on"
+    },
+    "editor.snippetSuggestions": "top",
+    "editor.wordWrap": "on"
+  },
+  "cSpell.words": ["OODA", "PDCA", "PMBOK"]
 }
